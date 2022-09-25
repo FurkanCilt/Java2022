@@ -1,0 +1,23 @@
+package intro;
+
+public class mükemmelSayı {
+	public static void main(String[] args) {
+	//6 mükemmel bir sayıdır. Sebep 1,2,3 beraber bölünür. Toplamları 6 eder
+	//28 mükemmler sayıdır. Sebep 1,2,4,7,14 beraber bölünür. Toplmları 28 eder.
+	
+int number = 29;
+int total = 0;
+for(int i=1;i<number;i++) {
+	if(number % i==0) {
+		total = total+i;
+	}
+}
+if(total == number){
+System.out.println("Mükemmel sayıdır");
+} else {
+	System.out.println("Mükemmel sayı değildir");
+}
+
+
+}
+}
